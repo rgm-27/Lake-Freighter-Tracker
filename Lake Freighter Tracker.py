@@ -7,8 +7,8 @@ st.title('Lake Freighter Tracker')
 #tabs for GUI
 tab1, tab2, tab3 = st.tabs(['About', 'Data (Input Required)', 'Plot'])
 
+#high level intro to the application
 with tab1:
-    #high level intro to the application
     st.write('Hello,')
 
     st.write('This application is meant to track the (13) one thousand foot long lakers on the Great Lakes using  \n\
