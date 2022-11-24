@@ -25,44 +25,108 @@ if 'ship_dictionary' not in st.session_state:
 
     st.session_state['ship_dictionary'] = {
 
-        'American Century': {'Name': 'American Century', 'IMO': 'IMO7923196', 'Overall_Length': '1000',
-        'Operator': 'American Steamship Company', 'Builder': 'Bay Shipbuilding Company', 'Year_Launched': '1981'},
+        'American Century': {
+            'Name': 'American Century',
+            'IMO': 'IMO7923196',
+            'Overall_Length': '1000',
+            'Operator': 'American Steamship Company',
+            'Builder': 'Bay Shipbuilding Company',
+            'Year_Launched': '1981'},
 
-        'American Integrity': {'Name': 'American Integrity', 'IMO': 'IMO7514696', 'Overall_Length': '1000',
-        'Operator': 'American Steamship Company', 'Builder': 'Bay Shipbuilding Company', 'Year_Launched': '1978'},
+        'American Integrity': {
+            'Name': 'American Integrity',
+            'IMO': 'IMO7514696',
+            'Overall_Length': '1000',
+            'Operator': 'American Steamship Company',
+            'Builder': 'Bay Shipbuilding Company',
+            'Year_Launched': '1978'},
 
-        'American Spirit': {'Name': 'American Spirit', 'IMO': 'IMO7423392', 'Overall_Length': '1004',
-        'Operator': 'American Steamship Company', 'Builder': 'American Ship Building Company', 'Year_Launched': '1978'},
+        'American Spirit': {
+            'Name': 'American Spirit',
+            'IMO': 'IMO7423392',
+            'Overall_Length': '1004',
+            'Operator': 'American Steamship Company',
+            'Builder': 'American Ship Building Company',
+            'Year_Launched': '1978'},
 
-        'Burns Harbor': {'Name': 'Burns Harbor', 'IMO': 'IMO7514713', 'Overall_Length': '1000',
-        'Operator': 'American Steamship Company', 'Builder': 'Bay Shipbuilding Company', 'Year_Launched': '1980'},
+        'Burns Harbor': {
+            'Name': 'Burns Harbor',
+            'IMO': 'IMO7514713',
+            'Overall_Length': '1000',
+            'Operator': 'American Steamship Company',
+            'Builder': 'Bay Shipbuilding Company',
+            'Year_Launched': '1980'},
 
-        'Edger B. Speer': {'Name': 'Edger B. Speer', 'IMO': 'IMO7625952', 'Overall_Length': '1004',
-        'Operator': 'Great Lakes Fleet,Inc', 'Builder': 'American Ship Building Company', 'Year_Launched': '1980'},
+        'Edger B. Speer': {
+            'Name': 'Edger B. Speer',
+            'IMO': 'IMO7625952',
+            'Overall_Length': '1004',
+            'Operator': 'Great Lakes Fleet,Inc',
+            'Builder': 'American Ship Building Company',
+            'Year_Launched': '1980'},
 
-        'Edwin H. Gott': {'Name': 'Edwin H. Gott', 'IMO': 'IMO7606061', 'Overall_Length': '1004',
-        'Operator': 'Great Lakes Fleet,Inc', 'Builder': 'Bay Shipbuilding Company', 'Year_Launched': '1979'},
+        'Edwin H. Gott': {
+            'Name': 'Edwin H. Gott',
+            'IMO': 'IMO7606061',
+            'Overall_Length': '1004',
+            'Operator': 'Great Lakes Fleet,Inc',
+            'Builder': 'Bay Shipbuilding Company',
+            'Year_Launched': '1979'},
 
-        'Indiana Harbor': {'Name': 'Indiana Harbor', 'IMO': 'IMO7514701', 'Overall_Length': '1000',
-        'Operator': 'American Steamship Company', 'Builder': 'Bay Shipbuilding Company', 'Year_Launched': '1979'},
+        'Indiana Harbor': {
+            'Name': 'Indiana Harbor',
+            'IMO': 'IMO7514701',
+            'Overall_Length': '1000',
+            'Operator': 'American Steamship Company',
+            'Builder': 'Bay Shipbuilding Company',
+            'Year_Launched': '1979'},
 
-        'James R. Barker': {'Name': 'James R. Barker', 'IMO': 'IMO7390260', 'Overall_Length': '1004',
-        'Operator': 'Interlake Steamship Company', 'Builder': 'American Ship Building Company', 'Year_Launched': '1976'},
+        'James R. Barker': {
+            'Name': 'James R. Barker',
+            'IMO': 'IMO7390260',
+            'Overall_Length': '1004',
+            'Operator': 'Interlake Steamship Company',
+            'Builder': 'American Ship Building Company',
+            'Year_Launched': '1976'},
 
-        'Mesabi Miner': {'Name': 'Mesabi Miner', 'IMO': 'IMO7390260', 'Overall_Length': '1004',
-        'Operator': 'Interlake Steamship Company', 'Builder': 'American Ship Building Company', 'Year_Launched': '1977'},
+        'Mesabi Miner': {
+            'Name': 'Mesabi Miner',
+            'IMO': 'IMO7390260',
+            'Overall_Length': '1004',
+            'Operator': 'Interlake Steamship Company',
+            'Builder': 'American Ship Building Company',
+            'Year_Launched': '1977'},
 
-        'Paul R. Tregurtha': {'Name': 'Paul R. Tregurtha', 'IMO': 'IMO7729057', 'Overall_Length': '1013.5',
-        'Operator': 'Interlake Steamship Company', 'Builder': 'American Ship Building Company', 'Year_Launched': '1981'},
+        'Paul R. Tregurtha': {
+            'Name': 'Paul R. Tregurtha',
+            'IMO': 'IMO7729057',
+            'Overall_Length': '1013.5',
+            'Operator': 'Interlake Steamship Company',
+            'Builder': 'American Ship Building Company',
+            'Year_Launched': '1981'},
 
-        'Presque Isle': {'Name': 'Presque Isle', 'IMO': 'IMO7303877', 'Overall_Length': '1000',
-        'Operator': 'Great Lakes Fleet,Inc.', 'Builder': 'DeFoe Shipbuilding / Erie Marine', 'Year_Launched': '1973'},
+        'Presque Isle': {
+            'Name': 'Presque Isle',
+            'IMO': 'IMO7303877',
+            'Overall_Length': '1000',
+            'Operator': 'Great Lakes Fleet,Inc.',
+            'Builder': 'DeFoe Shipbuilding / Erie Marine',
+            'Year_Launched': '1973'},
 
-        'Stewart J. Cort': {'Name': 'Stewart J. Cort', 'IMO': 'IMO7105495', 'Overall_Length': '1000',
-        'Operator': 'Interlake Steamship Company', 'Builder': 'Erie Marine', 'Year_Launched': '1972'},
+        'Stewart J. Cort': {
+            'Name': 'Stewart J. Cort',
+            'IMO': 'IMO7105495',
+            'Overall_Length': '1000',
+            'Operator': 'Interlake Steamship Company',
+            'Builder': 'Erie Marine',
+            'Year_Launched': '1972'},
 
-        'Walter J. McCarthy Jr.': {'Name': 'Walter J. McCarthy Jr.', 'IMO': 'IMO7514684', 'Overall_Length': '1000',
-        'Operator': 'American Steamship Company', 'Builder': 'Bay Shipbulding Company', 'Year_Launched': '1977'}}
+        'Walter J. McCarthy Jr.': {
+            'Name': 'Walter J. McCarthy Jr.',
+            'IMO': 'IMO7514684', 'Overall_Length': '1000',
+            'Operator': 'American Steamship Company',
+            'Builder': 'Bay Shipbulding Company',
+            'Year_Launched': '1977'}}
 
 # stateful variable for ship data frame
 if 'ship_data_frame' not in st.session_state:
@@ -119,10 +183,26 @@ def side_bar():
         st.session_state['current_ship'] = option
         # use current_ship and ship_dictionary to display additional information
         st.header('Ship Information')
-        st.write('Overall Length (feet):', st.session_state['ship_dictionary'][st.session_state['current_ship']]['Overall_Length'])
-        st.write('Operator:', st.session_state['ship_dictionary'][st.session_state['current_ship']]['Operator'])
-        st.write('Builder:', st.session_state['ship_dictionary'][st.session_state['current_ship']]['Builder'])
-        st.write('Year Launched:', st.session_state['ship_dictionary'][st.session_state['current_ship']]['Year_Launched'])
+
+        st.write(
+                'Overall Length (feet):',
+                st.session_state['ship_dictionary']
+                [st.session_state['current_ship']]['Overall_Length'])
+
+        st.write(
+                'Operator:',
+                st.session_state['ship_dictionary']
+                [st.session_state['current_ship']]['Operator'])
+
+        st.write(
+                'Builder:',
+                st.session_state['ship_dictionary']
+                [st.session_state['current_ship']]['Builder'])
+
+        st.write(
+                'Year Launched:',
+                st.session_state['ship_dictionary']
+                [st.session_state['current_ship']]['Year_Launched'])
 
 
 # plot ship travel
@@ -140,8 +220,10 @@ def plot():
             fig_lon = df_query.LON
 
             # plot - center on Makinac Bridge
-            fig = px.scatter_mapbox(None, lat=fig_lat, lon=fig_lon, hover_name=fig_hover_name,
-            hover_data=None, color_discrete_sequence=['fuchsia'], center=dict(lat=45.8174, lon=-84.7278), zoom=4, height=300)
+            fig = px.scatter_mapbox(
+                None, lat=fig_lat, lon=fig_lon, hover_name=fig_hover_name,
+                hover_data=None, color_discrete_sequence=['fuchsia'],
+                center=dict(lat=45.8174, lon=-84.7278), zoom=4, height=300)
 
             # layout options
             fig.update_layout(mapbox_style='open-street-map')
