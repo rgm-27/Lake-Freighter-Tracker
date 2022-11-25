@@ -11,12 +11,14 @@ tab1, tab2, tab3 = st.tabs(['About', 'Data (Input Required)', 'Plot'])
 with tab1:
     st.write('Hello,')
 
-    st.write('This application is meant to track the (13) one thousand foot long lakers on the Great Lakes using  \n\
-    historic Automatic Identification System (AIS) data provided by https://marinecadastre.gov/ais/  \n\
-    (see "points" data)')
+    st.write(
+            'This application is meant to track the (13) one thousand foot long lakers on the Great Lakes using  \n\
+            historic Automatic Identification System (AIS) data provided by https://marinecadastre.gov/ais/  \n\
+            (see "points" data)')
 
-    st.write('The data files are very large and take awhile to load into the program. If you encounter  \n\
-    an error due to uploaded file size see Streamlit options such as (--server.maxUploadSize)')
+    st.write(
+            'The data files are very large and take awhile to load into the program. If you encounter  \n\
+            an error due to uploaded file size see Streamlit options such as (--server.maxUploadSize)')
 
     st.write('To get started please move to the "Data" tab')
 
@@ -157,7 +159,9 @@ def create_data_frame(file):
             st.session_state['ship_data_frame'] = None
             # clear saved values associated with this function
             create_data_frame.clear()
-            st.write('UPLOADED FILE IS NOT OF THE CORRECT TYPE. PLEASE REMOVE FILE  \n  AND REPLACE WITH PROPER TYPE FROM https://marinecadastre.gov/ais/')
+            st.write(
+                    'UPLOADED FILE IS NOT OF THE CORRECT TYPE. PLEASE REMOVE FILE  \n\
+                    AND REPLACE WITH PROPER TYPE FROM https://marinecadastre.gov/ais/')
             return None
 
 
@@ -179,8 +183,10 @@ def side_bar():
     # place on sidebar
     with st.sidebar:
         # select ship names from dictionary keys
-        option = st.selectbox('Please Select a Ship', options=st.session_state['ship_dictionary'].keys())
+        option = st.selectbox('Please Select a Ship',
+               options=st.session_state['ship_dictionary'].keys())
         st.session_state['current_ship'] = option
+
         # use current_ship and ship_dictionary to display additional information
         st.header('Ship Information')
 
@@ -241,12 +247,10 @@ def plot():
 
 # driver code
 def main():
-
     file_uploader()
     side_bar()
     plot()
 
 
 if __name__ == '__main__':
-
     main()
